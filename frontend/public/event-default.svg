@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="gd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#gd)"/>
+  <g fill="#0b1220" fill-opacity="0.15">
+    <circle cx="180" cy="160" r="120"/>
+    <circle cx="980" cy="520" r="180"/>
+    <rect x="420" y="360" width="420" height="120" rx="16"/>
+  </g>
+  <g font-family="Inter,Segoe UI,Arial" fill="#ffffff">
+    <text x="60" y="110" font-size="56" font-weight="700">Event</text>
+    <text x="60" y="170" font-size="28" opacity="0.9">Details coming soon</text>
+  </g>
+</svg>

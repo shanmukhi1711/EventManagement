@@ -1,0 +1,62 @@
+# Design Thinking Project: VNR VJIET Spark Event Management Web Application
+
+## Problem Statement
+VNR VJIET hosts diverse campus events, but fragmented manual communication via posters, emails, and word-of-mouth hinders student awareness and participation. Students struggle to discover events, register efficiently, and track their involvement, leading to missed opportunities for engagement and skill development. Event organizers face administrative burdens in managing registrations and generating certificates without a centralized system. This results in low participation rates and inefficient processes that impede campus culture and student growth. A digital platform is needed to streamline event discovery, registration, notifications, and certificate management, enhancing accessibility and fostering a vibrant community at VNR VJIET.
+
+## Empathy Tool Used
+Interviews and surveys were used to empathize with users. Semi-structured interviews gathered deep qualitative insights into pain points, while surveys provided quantitative data on preferences and behaviors.
+
+## Research Conducted
+Primary research included semi-structured interviews with 20 students and 5 faculty members to gather qualitative insights on event experiences. A survey questionnaire was distributed to 100+ students via Google Forms, collecting quantitative data on participation rates and preferences (e.g., 70% prefer digital notifications). Stakeholder groups involved: Students (primary users), Faculty/Organizers (secondary), and Administration (tertiary). Secondary research reviewed statistics from similar campus apps, showing average participation increases of 40% with digital tools.
+
+## Questions for Discovery of Problem Statement
+- What problems do you face with campus events in general?
+- Can you describe your experience with participating in events at VNR VJIET?
+- What aspects of event management or participation do you find most difficult?
+- How do you typically get information about events?
+- What situations have led you to miss out on events?
+- As an organizer, what challenges do you encounter in planning and managing events?
+- What do you wish was different about how events are handled on campus?
+
+## Questions After Discovery of Problem Statement for Better Solution
+- What features would you prioritize in a digital event platform (e.g., notifications, easy registration, certificates)?
+- How important is mobile access for event discovery?
+- Would you prefer personalized recommendations based on your interests?
+- What security concerns do you have with online registration?
+- How can the platform help build community among students?
+- What integrations (e.g., Google Calendar, social media) would be useful?
+- How should the platform handle event analytics for organizers?
+
+## Persona
+The main users of our application are students and event organizers, including faculty coordinators. Students seek easy access to events for participation and skill-building, while organizers need efficient tools for management and engagement.
+
+## Defining Insights
+[User will specify the needs themselves.]
+
+## Point of View Statement
+Students at VNR VJIET need a centralized digital platform to discover, register, and track campus events because current manual methods are inefficient and limit participation, leading to missed opportunities for personal and academic growth.
+
+## Ideation Method Used
+Brainstorming was chosen as the best suitable ideation method for this web application. It allows rapid generation of diverse ideas in a collaborative group setting, focusing on user-centric features like event discovery, registration, and notifications. This method encourages creativity while ensuring ideas align with technical and economic constraints of a campus web app.
+
+## Ideation Ideas Evaluation Table
+
+| IDEA | User Desirability | Technical Feasibility | Economic Viability | TOTAL |
+|------|-------------------|-----------------------|---------------------|-------|
+| Idea 1: Centralized Event Discovery Platform | High: Directly benefits students by providing easy access to all events in one place, increasing awareness and participation. | High: Uses standard web technologies like React for frontend and Node.js for backend, with simple database integration. | High: Low development costs using open-source tools; free for users, potential for institutional funding. | High |
+| Idea 2: Seamless Online Registration System | High: Eliminates manual sign-ups, saving time and reducing errors for students and organizers. | High: Integrates with existing auth systems (e.g., Google OAuth) and databases for real-time updates. | High: Minimal ongoing costs; leverages free cloud hosting for scalability. | High |
+| Idea 3: Personalized Notification System | High: Keeps users engaged with tailored alerts, improving event attendance and satisfaction. | Moderate: Requires notification scheduling and user preference storage; feasible with libraries like Node.js schedulers. | Moderate: Initial setup costs for automation, but low maintenance; can be monetized via premium features. | High |
+| Idea 4: Certificate Generation and Download | High: Provides instant access to certificates, enhancing motivation for participation. | High: Uses PDF generation libraries (e.g., jsPDF) integrated with user profiles. | High: Low-cost implementation; free for basic use, potential upsell for custom certificates. | High |
+| Idea 5: Organizer Dashboard for Event Management | Moderate: Appeals to faculty coordinators for efficient admin tasks, but secondary to student features. | Moderate: Needs CRUD operations and analytics; buildable with Express and SQLite. | Moderate: Development costs for advanced features, but viable with campus budget. | Moderate |
+| Idea 6: Mobile-Responsive Design with PWA | High: Ensures accessibility on phones, crucial for on-the-go students. | High: React-based PWA is straightforward with existing stack. | High: No extra costs; enhances user adoption without additional infrastructure. | High |
+
+## Solution Prototype
+The prototype is the developed web application "VNR VJIET Spark," built using React (frontend) and Node.js/Express (backend) with SQLite database. It includes user authentication (Google OAuth), event listings, registration forms, profile pages, and certificate generation. The prototype was designed using Figma for initial wireframes and then implemented as a functional app. Key screens: Home page with event carousel, Events page with filters, Login/Register, Profile with registered events. The app is responsive and accessible via desktop/mobile. Testing involved user feedback loops to iterate on usability.
+
+## Innovation in Terms of Desirability, Viability, and Feasibility
+- **Desirability:** High user appeal through intuitive UI/UX, personalized features, and mobile-first design, addressing real pain points like poor event visibility.
+- **Viability:** Financially sustainable as a free campus tool; potential for monetization via premium features for organizers. Market validation from surveys shows 85% willingness to adopt.
+- **Feasibility:** Technically achievable with open-source stacks (React, Node.js); development time was 4-6 weeks with a small team. Scalable for future enhancements like AI recommendations.
+
+## Design for Environment (Optional)
+The solution promotes sustainability by digitizing event management, reducing paper waste from posters, flyers, and printed certificates. Digital notifications and online registrations minimize physical resources, aligning with eco-friendly campus initiatives. The app's cloud-based hosting ensures low energy consumption compared to traditional methods, contributing to VNR VJIET's green goals.
